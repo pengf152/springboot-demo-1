@@ -1,0 +1,40 @@
+
+
+spring:
+  profiles:
+    active: dev
+
+---
+spring:
+  profiles: dev
+
+server:
+  port: 80
+  servlet:
+    context-path: /
+
+jdbc:
+  name: mysql数据库
+  jdbcDriver: mysql驱动
+
+jdbc2:
+  name: mysql数据库2222222
+  jdbcDriver: mysql驱动222222222222222
+
+---
+
+spring:
+  profiles: prod
+
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+jdbc:
+  name: mysql数据库
+  jdbcDriver: mysql驱动
+
+jdbc2:
+  name: mysql数据库2222222
+  jdbcDriver: mysql驱动222222222222222
